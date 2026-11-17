@@ -1,0 +1,17 @@
+{
+  "name": "github-trending-repos-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scrape trending GitHub repositories, open-source AI projects, stars, forks, topics, and authors by language and keyword.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "tuqiiiy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.12.2",
+    "got-scraping": "^4.0.7"
+  }
+}

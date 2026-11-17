@@ -1,0 +1,45 @@
+{
+  "title": "GitHub Trending Repos Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "topic": {
+      "title": "Topic / Keyword",
+      "type": "string",
+      "description": "Filter by topic or keyword (e.g., 'ai', 'llm', 'agents', 'web3', 'scraper'). Leave empty for general.",
+      "default": "ai",
+      "editor": "textfield"
+    },
+    "language": {
+      "title": "Programming Language",
+      "type": "string",
+      "description": "Filter by programming language (e.g., 'python', 'javascript', 'typescript', 'rust', 'go'). Leave blank for all languages.",
+      "default": "",
+      "editor": "textfield"
+    },
+    "minStars": {
+      "title": "Minimum Stars",
+      "type": "integer",
+      "description": "Minimum number of repository stars.",
+      "default": 100,
+      "minimum": 0
+    },
+    "sort": {
+      "title": "Sort Repositories By",
+      "type": "string",
+      "description": "Criteria to sort repositories.",
+      "default": "stars",
+      "editor": "select",
+      "enum": ["stars", "forks", "updated"],
+      "enumTitles": ["Most Stars", "Most Forks", "Recently Updated"]
+    },
+    "maxItems": {
+      "title": "Max Repositories",
+      "type": "integer",
+      "description": "Maximum number of repositories to extract (up to 100).",
+      "default": 30,
+      "minimum": 1,
+      "maximum": 100
+    }
+  }
+}
