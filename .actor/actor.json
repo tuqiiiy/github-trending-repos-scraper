@@ -1,49 +1,64 @@
-{
-  "actorSpecification": 1,
-  "name": "github-trending-repos-scraper",
-  "title": "GitHub Trending & High-Star Repos Scraper",
-  "description": "Discover trending GitHub repositories, open-source AI projects, and fast-growing codebases by topic, programming language, and star threshold. Great for developer scouting, tech market research, and competitive intelligence.",
-  "version": "1.0",
-  "meta": {
-    "templateId": "project_empty"
-  },
-  "dockerfile": "./Dockerfile",
-  "categories": [
-    "DEVELOPER_TOOLS",
-    "BUSINESS"
-  ],
-  "storages": {
-    "dataset": {
-      "actorSpecification": 1,
-      "title": "GitHub Repositories Dataset",
-      "views": {
-        "overview": {
-          "title": "Overview",
-          "transformation": {
-            "fields": [
-              "fullName",
-              "stars",
-              "forks",
-              "language",
-              "description",
-              "url",
-              "topics"
-            ]
-          },
-          "display": {
-            "component": "table",
-            "columns": {
-              "fullName": { "label": "Repository" },
-              "stars": { "label": "Stars ⭐" },
-              "forks": { "label": "Forks 🍴" },
-              "language": { "label": "Language" },
-              "description": { "label": "Description" },
-              "url": { "label": "Repo URL" },
-              "topics": { "label": "Topics" }
-            }
-          }
-        }
-      }
-    }
-  }
+﻿{
+    "actorSpecification":  1,
+    "name":  "github-trending-repos-scraper",
+    "title":  "GitHub Trending \u0026 High-Star Repos Scraper",
+    "description":  "Discover trending GitHub repositories, open-source AI projects, and fast-growing codebases by topic, programming language, and star threshold. Great for developer scouting, tech market research, and competitive intelligence.",
+    "version":  "1.0",
+    "meta":  {
+                 "templateId":  "project_empty"
+             },
+    "dockerfile":  "./Dockerfile",
+    "categories":  [
+                       "DEVELOPER_TOOLS",
+                       "BUSINESS"
+                   ],
+    "storages":  {
+                     "dataset":  {
+                                     "actorSpecification":  1,
+                                     "title":  "GitHub Repositories Dataset",
+                                     "views":  {
+                                                   "overview":  {
+                                                                    "title":  "Overview",
+                                                                    "transformation":  {
+                                                                                           "fields":  [
+                                                                                                          "fullName",
+                                                                                                          "stars",
+                                                                                                          "forks",
+                                                                                                          "language",
+                                                                                                          "description",
+                                                                                                          "url",
+                                                                                                          "topics"
+                                                                                                      ]
+                                                                                       },
+                                                                    "display":  {
+                                                                                    "component":  "table",
+                                                                                    "columns":  {
+                                                                                                    "fullName":  {
+                                                                                                                     "label":  "Repository"
+                                                                                                                 },
+                                                                                                    "stars":  {
+                                                                                                                  "label":  "Stars â­"
+                                                                                                              },
+                                                                                                    "forks":  {
+                                                                                                                  "label":  "Forks ğŸ´"
+                                                                                                              },
+                                                                                                    "language":  {
+                                                                                                                     "label":  "Language"
+                                                                                                                 },
+                                                                                                    "description":  {
+                                                                                                                        "label":  "Description"
+                                                                                                                    },
+                                                                                                    "url":  {
+                                                                                                                "label":  "Repo URL"
+                                                                                                            },
+                                                                                                    "topics":  {
+                                                                                                                   "label":  "Topics"
+                                                                                                               }
+                                                                                                }
+                                                                                }
+                                                                }
+                                               }
+                                 }
+                 },
+    "output":  "./output_schema.json"
 }
